@@ -37,6 +37,101 @@
   padding: 2em;
 }
 
+
 .read-the-docs {
   color: #888;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container.focused {
+  border-color: green; /* Border color when focused */
+}
+
+.base-text {
+  margin: 20px 0;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 800px;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.focused{
+  border: 4px solid green;
+}
+.unfocused{
+  border: 4px solid red;
+
+}
+
+.user-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  font-size: 18px; /* Match the font size */
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: text; /* Ensure cursor indicates text input */
+}
+
+.wpm {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.accuracy {
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.upload-text-container{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 800px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.timer-input-container {
+  display: flex;
+  align-items: center;  /* Center vertically */
+  gap: 10px;            /* Space between elements */
+}
+
+.timer-input {
+  margin: 0;
+}
+
+.timer-change-input {
+  width: 60px;  /* Adjust the width as needed */
+  padding: 5px;
+  font-size: 16px;
 }
